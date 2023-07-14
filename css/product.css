@@ -1,0 +1,8 @@
+.product-main-description,
+.product-main-feature li {
+  color: #000;
+  font-size: 14px;
+}
+.product-main-feature li:hover {
+  font-weight: bold;
+}
