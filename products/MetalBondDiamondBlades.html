@@ -18,6 +18,26 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <!-- <iframe width="100%" src="https://www.youtube.com/embed/jp3_RhBvgKU"
+            title="Diamond thin discs production process display" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe> -->
+            <video src="https://youtu.be/jp3_RhBvgKU"></video>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 加载提示-->
   <div class="preloader" id="page-loader">
     <div class="page-loader-logo">
@@ -33,6 +53,7 @@
       </div>
     </div>
   </div>
+
   <!-- Page-->
   <div class="page">
     <header class="page-header section">
@@ -337,9 +358,15 @@
                     </div>
                   </div>
                 </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Launch demo modal
+                </button>
                 <div class="group group-buttons group-middle"><a class="button button-darker" href="/contacts.html">get
                     a quote</a>
-                  <!-- <p>or</p><a class="button button-primary" href="#">get price list</a> -->
+                  <p>or</p>
+
+                  <!-- <a class="button button-primary" href="#">get price list</a> -->
+
                 </div>
               </div>
             </article>
