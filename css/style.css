@@ -541,7 +541,7 @@ hr {
 	overflow: hidden;
 	min-height: 100vh !important;
 	width: 100%;
-	opacity: 0;
+	opacity: 1;
 }
 
 .page.fadeIn {

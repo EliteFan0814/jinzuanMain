@@ -18,6 +18,21 @@
 </head>
 
 <body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe width="100%" height="450" src=""
+            title="Diamond thin discs production process display" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 加载提示-->
   <div class="preloader" id="page-loader">
     <div class="page-loader-logo">
@@ -84,20 +99,6 @@
                         </div>
                       </div>
                     </li>
-                    <!-- <li>
-                      <div class="unit unit-spacing-sm flex-row align-items-center">
-                        <div class="unit-left">
-                          <span class="icon icon-md icon-primary fl-bigmug-line-circular220"></span>
-                        </div>
-                        <div class="unit-body">
-                          <p>
-                            Certified
-                            <br />
-                            ISO 9001:2008
-                          </p>
-                        </div>
-                      </div>
-                    </li> -->
                   </ul>
                   <div class="rd-navbar-content__item">
                     <a class="button button-xs button-lighter" href="contacts.html">
@@ -112,22 +113,6 @@
             <div class="rd-navbar-main">
               <!-- RD Navbar Nav -->
               <div class="rd-navbar-nav-wrap">
-                <!-- RD Navbar Search-->
-                <!-- <div class="rd-navbar-search rd-navbar-search-toggled">
-                  <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
-                  <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live"
-                    method="GET">
-                    <div class="form-wrap">
-                      <input class="form-input" id="rd-navbar-search-form-input" type="text" name="s"
-                        autocomplete="off" />
-                      <label class="form-label" for="rd-navbar-search-form-input">
-                        Search...
-                      </label>
-                    </div>
-                    <button class="rd-navbar-search-submit" type="submit"></button>
-                    <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                  </form>
-                </div> -->
                 <ul class="rd-navbar-nav">
                   <li class="rd-nav-item active">
                     <a class="rd-nav-link" href="index.html">
@@ -138,18 +123,6 @@
                     <a class="rd-nav-link" href="about-us.html">
                       About
                     </a>
-                    <!-- <ul class="rd-menu rd-navbar-dropdown">
-                      <li class="rd-dropdown-item">
-                        <a class="rd-dropdown-link" href="top-management.html">
-                          Top management
-                        </a>
-                      </li>
-                      <li class="rd-dropdown-item">
-                        <a class="rd-dropdown-link" href="testimonials.html">
-                          Testimonials
-                        </a>
-                      </li>
-                    </ul> -->
                   </li>
                   <li class="rd-nav-item">
                     <a class="rd-nav-link" href="solution.html">
@@ -408,14 +381,13 @@
                 <div>
                   <div class="unit flex-row align-items-center unit-spacing-xs">
                     <div class="unit-left" style="font-size: 0">
-                      <a class="link link-video" href="//youtu.be/jp3_RhBvgKU" target="_blank" data-lightgallery="item"></a>
+                      <a class="link link-video" id="videoBtn"></a>
                     </div>
                     <div class="unit-body">
                       <h5>
                         Video
                         <br />
                         Presentation
-
                       </h5>
                     </div>
                   </div>
@@ -499,12 +471,12 @@
             </figure>
             <div class="thumb-janez__content bg-gray-dark">
               <div class="thumb-janez__content-inner">
-                <h5><a href="#">Automobile Industry</a></h5>
+                <h5><a href="/served-automobile.html">Automobile Industry</a></h5>
                 <p>
                   CBN special dressing rollers and grinding wheels for the
                   automotive industry
                 </p>
-                <a class="button button-xs button-darker" href="#">
+                <a class="button button-xs button-darker" href="/served-automobile.html">
                   read more
                 </a>
               </div>
@@ -530,9 +502,9 @@
             </figure>
             <div class="thumb-janez__content bg-gray-dark">
               <div class="thumb-janez__content-inner">
-                <h5><a href="#">Electronic Products</a></h5>
+                <h5><a href="/served-electronic.html">Electronic Products</a></h5>
                 <p>Super thin Diamond Cut-off Wheels for circuit boards</p>
-                <a class="button button-xs button-darker" href="#">
+                <a class="button button-xs button-darker" href="/served-electronic.html">
                   read more
                 </a>
               </div>
@@ -572,66 +544,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Testimonials-->
-    <!-- <section class="section section-lg bg-default text-center">
-      <div class="container">
-        <h2>Testimonials</h2>
-        <div class="row row-50">
-          <div class="col-md-6 col-lg-4 wow fadeInUpSmall">
-            <article class="quote-creative">
-              <div class="quote-creative__header">
-                <div class="quote-creative__image-wrap"><img class="quote-creative__image"
-                    src="images/testimonials-1-88x88.jpg" alt="" width="88" height="88" />
-                </div>
-              </div>
-              <div class="quote-creative__main">
-                <p class="q">Alfa Industries is a company that we can rely on. We often have to react to customer needs
-                  quickly and we know that they will take care of us even at a moment’s notice.</p>
-                <ul class="quote-creative__meta">
-                  <li><span class="cite">Jeffrey Neddery</span></li>
-                  <li><span class="small">CEO “BTC Ltd.”</span></li>
-                </ul>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUpSmall" data-wow-delay=".2s">
-            <article class="quote-creative">
-              <div class="quote-creative__header">
-                <div class="quote-creative__image-wrap"><img class="quote-creative__image"
-                    src="images/testimonials-2-88x88.jpg" alt="" width="88" height="88" />
-                </div>
-              </div>
-              <div class="quote-creative__main">
-                <p class="q">Alfa Industries is a partner we can trust. People do business with people they know and
-                  trust. That's why we partner with this industrial company on everything.</p>
-                <ul class="quote-creative__meta">
-                  <li><span class="cite">John Williams</span></li>
-                  <li><span class="small">CEO “InterInverse”</span></li>
-                </ul>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInUpSmall" data-wow-delay=".3s">
-            <article class="quote-creative">
-              <div class="quote-creative__header">
-                <div class="quote-creative__image-wrap"><img class="quote-creative__image"
-                    src="images/testimonials-3-88x88.jpg" alt="" width="88" height="88" />
-                </div>
-              </div>
-              <div class="quote-creative__main">
-                <p class="q">I have worked with many companies offering supplemental industrial services, and out of all
-                  those companies you were one who really stood out from the rest.</p>
-                <ul class="quote-creative__meta">
-                  <li><span class="cite">Will Peters</span></li>
-                  <li><span class="small">CEO “Betaworks”</span></li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Brands-->
     <section class="section parallax-container bg-gray-dark" data-parallax-img="images/parallax-1.jpg">
@@ -691,41 +603,18 @@
             <!-- Post minimal-->
             <article class="post-minimal">
               <time class="post-minimal__time" datetime="2022">
-                April 13, 2022
+                July 22, 2023
               </time>
               <div class="post-minimal__divider"></div>
               <h6 class="post-minimal__title">
                 <a href="single-post.html">
-                  The Fourth Industrial Revolution: What's in Store for
-                  Manufacturers?
+                  Difference in bonds
                 </a>
               </h6>
               <p>
-                The mankind now finds itself standing on a verge of such a
-                scale of a technological...
+                There are various types of bonds for diamond cutting discs and grinding wheels....
               </p>
-              <a class="button button-xs button-lighter" href="single-post.html">
-                read more
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInRightSmall" data-wow-delay=".1s">
-            <!-- Post minimal-->
-            <article class="post-minimal">
-              <time class="post-minimal__time" datetime="2022">
-                March 25, 2022
-              </time>
-              <div class="post-minimal__divider"></div>
-              <h6 class="post-minimal__title">
-                <a href="single-post.html">
-                  Design and Advanced Materials As a Driver of Innovation
-                </a>
-              </h6>
-              <p>
-                In recent years advanced materials have emerged and are having
-                a major impact on...
-              </p>
-              <a class="button button-xs button-lighter" href="single-post.html">
+              <a class="button button-xs button-lighter" href="/news/DifferenceinBonds.html">
                 read more
               </a>
             </article>
@@ -739,19 +628,38 @@
               <div class="post-minimal__divider"></div>
               <h6 class="post-minimal__title">
                 <a href="single-post.html">
-                  Multitasking Materials in Future Construction and
-                  Architecture
+                  Diamond or cbn superabrasives
                 </a>
               </h6>
               <p>
-                Installations are often a practically invisible part of a
-                building. Miles of...
+                Superabrasives is a term used to describe Diamond and CBN (Cubic Boron Nitride)...
               </p>
-              <a class="button button-xs button-lighter" href="single-post.html">
+              <a class="button button-xs button-lighter" href="/news/DiamondOrCbnSuperabrasives.html">
                 read more
               </a>
             </article>
           </div>
+          <div class="col-md-6 col-lg-4 wow fadeInRightSmall" data-wow-delay=".1s">
+            <!-- Post minimal-->
+            <article class="post-minimal">
+              <time class="post-minimal__time" datetime="2022">
+                March 25, 2023
+              </time>
+              <div class="post-minimal__divider"></div>
+              <h6 class="post-minimal__title">
+                <a href="single-post.html">
+                  Diamond discs(Blades)
+                </a>
+              </h6>
+              <p>
+                Diamond cutting discs, that is, the main body is made of high-strength...
+              </p>
+              <a class="button button-xs button-lighter" href="/news/DiamondDiscs.html">
+                read more
+              </a>
+            </article>
+          </div>
+        
         </div>
       </div>
     </section>
@@ -852,10 +760,6 @@
                   <span>JinZuan Company</span>
                   <span>&nbsp;&copy;&nbsp;</span>
                   <span class="copyright-year"></span>
-                  <!-- .&nbsp;
-                <br class="d-sm-none" />
-                By
-                <a href="http://www.bootstrapmb.com/">bootstrapmb</a> -->
                 </p>
               </div>
               <div class="col-md-6 text-md-end">
@@ -894,7 +798,17 @@
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $('#videoBtn').click(function () {
+      var indexSrc = 'https://www.youtube.com/embed/jp3_RhBvgKU?autoplay=1';
+      $('#exampleModal').modal('show');
+      $('#exampleModal iframe').attr('src', indexSrc);
+    });
 
+    $('#exampleModal button').click(function () {
+      $('#exampleModal iframe').removeAttr('src');
+    });
+  </script>
 </body>
 
 </html>
