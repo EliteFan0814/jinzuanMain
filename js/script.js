@@ -96,44 +96,14 @@
     scrollHandler()
     $window.on('scroll', scrollHandler)
   }
+  plugins.preloader.addClass("loaded");
 
   // Initialize scripts that require a loaded window
   $window.on('load', function () {
     // Page loader & Page transition
     if (plugins.preloader.length && !isNoviBuilder) {
-      plugins.preloader.addClass("loaded");
-      plugins.page.removeClass("fadeOut");
-
-      // pageTransition({
-      //   target: document.querySelector('.page'),
-      //   delay: 0,
-      //   duration: 500,
-      //   classIn: 'fadeIn',
-      //   classOut: 'fadeOut',
-      //   classActive: 'animated',
-      //   conditions: function (event, link) {
-      //     return (
-      //       link &&
-      //       !/(\#|javascript:void\(0\)|callto:|tel:|mailto:|:\/\/)/.test(link) &&
-      //       !event.currentTarget.hasAttribute('data-lightgallery') &&
-      //       !event.currentTarget.matches('[target="_blank"]')
-      //     )
-      //   },
-      //   onTransitionStart: function (options) {
-      //     plugins.preloader.removeClass("loaded");
-      //     plugins.page.removeClass("fadeOut");
-
-      //     // setTimeout(function () {
-      //     //   // 开启loading
-      //     // }, options.duration * 0.15)
-      //   },
-      //   onReady: function () {
-      //     // 隐藏loading
-      //     plugins.preloader.addClass('loaded')
-      //     plugins.page.removeClass("fadeOut");
-      //     windowReady = true
-      //   }
-      // })
+      // plugins.preloader.addClass("loaded");
+      // plugins.page.removeClass("fadeOut");
     }
 
     // Counter

@@ -13141,6 +13141,9 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .material-parallax img {
+	filter: brightness(70%);
+	-webkit-filter: brightness(70%);
+-moz-filter: brightness(70%);
 	display: none;
 	position: absolute;
 	left: 50%;
