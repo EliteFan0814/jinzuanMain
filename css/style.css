@@ -13622,7 +13622,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	text-decoration: none;
 	z-index: 20;
 	transition: .3s all ease;
-	transform: translateY(100px);
+	transform: translateY(150px);
 }
 
 .ui-to-top, .ui-to-top:active, .ui-to-top:focus {
@@ -13646,8 +13646,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 
 @media (min-width: 576px) {
 	.ui-to-top {
-		right: 40px;
-		bottom: 40px;
+		right: 25px;
+		bottom: 100px;
 	}
 }
 
